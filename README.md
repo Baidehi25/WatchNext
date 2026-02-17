@@ -2,7 +2,6 @@
 
 
 # WatchNext
-
 WatchNext is a machine learning powered movie recommendation system that uses association rule mining to identify relationships between films based on user viewing behaviour.
 Unlike traditional recommendation systems that rely heavily on ratings or popularity metrics, WatchNext focuses on discovering hidden co-watching patterns. This approach helps generate recommendations that better reflect how audiences actually consume content.
 

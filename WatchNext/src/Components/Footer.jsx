@@ -10,6 +10,7 @@ const Footer = () => {
                 </p>
                 <div className="flex justify-center mt-4 gap-8 text-sm text-white/70">
                     <span className="hover:text-[#E50914] transition">React</span>
+                    <span className="hover:text-[#E50914] transition">Tailwind CSS</span>
                     <span className="hover:text-[#E50914] transition">FastAPI</span>
                     <span className="hover:text-[#E50914] transition">Python</span>
                     <span className="hover:text-[#E50914] transition">OMDb API</span>

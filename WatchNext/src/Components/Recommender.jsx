@@ -1,8 +1,9 @@
 import React from 'react'
+import { forwardRef } from 'react';
 
-const Recommender = () => {
+const Recommender = forwardRef((props, ref) => {
     return (
-        <div>
+        <div ref={ref}>
             <section>
                 <div className='flex flex-col justify-center items-center m-30'>
                     <h2 className='text-white text-[40px] font-bold mt-10 text-center'>Find Your Next Binge</h2>
@@ -31,6 +32,6 @@ const Recommender = () => {
             </section>
         </div>
     )
-}
+})
 
 export default Recommender

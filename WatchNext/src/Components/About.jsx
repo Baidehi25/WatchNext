@@ -1,8 +1,9 @@
 import React from 'react'
+import { forwardRef } from 'react';
 
-const About = () => {
+const About = forwardRef((props, ref) => {
     return (
-        <div className='flex flex-col justify-center items-center m-30' id='about'>
+        <div className='flex flex-col justify-center items-center m-30' id='about' ref={ref}>
             <h2 className='text-[#E50914] text-[40px] font-bold'>About WatchNext</h2>
             <p className='text-white/80 text-[20px] mt-13 text-center max-w-2xl mx-auto'>
                 WatchNext is a machine learning powered movie recommendation system that uses <span className='text-[#E50914]'>association rule mining</span> to identify relationships between films based on user viewing behaviour.
@@ -13,6 +14,6 @@ const About = () => {
             </p>
         </div>
     )
-}
+})
 
 export default About
