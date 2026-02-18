@@ -2,6 +2,15 @@ import React from 'react'
 import { forwardRef } from 'react';
 
 const Recommender = forwardRef((props, ref) => {
+
+    const [status,setStatus]=useState('idle') // 'idle', 'loading', 'success', 'error'
+    const [movie,setMovie]=useState('') //user input for movie name
+    const [recommendation,setRecommendation]=useState(null) //recommended movie details
+
+    const handleRecommend=()={
+        
+    }
+
     return (
         <div ref={ref}>
             <section>
