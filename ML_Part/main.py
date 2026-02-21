@@ -10,12 +10,11 @@
 
 # 3. The route — The actual endpoint /recommend. When React sends a POST request there, FastAPI calls get_recommendations, gets the results, and sends them back as JSON.
 
-
+import pandas as pd
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from recommender import get_recommendations
-
+from recommender import get_recommendations,resultsdb
 
 #1. Setup+CORS
 
@@ -40,4 +39,35 @@ class MovieRequest(BaseModel):        #BaseModel is a class from Pydantic that a
 def recommend(request: MovieRequest):     #request: MovieRequest means the incoming data will be automatically validated against the Pydantic model and passed in as a MovieRequest object.
     movie=request.movie
     recommendations=get_recommendations(movie)
-    return recommendations
+    return {"recommendations": recommendations}  #This returns a JSON response with a single field called "recommendations" which contains the list of recommended movies. FastAPI automatically converts the Python dictionary into JSON format when sending the response back to React.
+
+
+
+@app.get("/movies")          #/movies is a GET endpoint
+def get_movies():
+    movies= pd.concat([resultsdb['Movie 1'], resultsdb['Movie 2']]).unique().tolist()  #This line combines the "Movie 1" and "Movie 2" columns from the results database, finds the unique movie titles (ensures no duplication), and converts them into a list.
+    return {"movies": movies}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# LEARNING OUTCOMES:
+# 1. /recommend and /movies are two endpoints that React can call to get data from FastAPI.
+
+# 2. The /recommend endpoint expects a POST request with a JSON body that matches the MovieRequest model, while the /movies endpoint responds to GET requests and returns a list of movies from the results database.
+
+# 3. FastAPI automatically handles the conversion between Python data structures and JSON, making it easy to send and receive data between the backend and frontend.
+
+# 4. Understppd the usage of virtual environments in Miniconda, how to create and activate them, and how to install dependencies within the virtual environment to keep the project organized and avoid conflicts with other Python projects on the same machine.
+
+# 5. Start server -------> uvicorn main:app --reload

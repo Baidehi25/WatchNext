@@ -7,7 +7,7 @@ const Guide = () => {
         <div className='mt-13 flex gap-15 text-white'>
             <div className='flex flex-col justify-center items-center mt-10'>
                 <h1 className='bg-[#E50914] text-[30px] w-[45px] rounded-full text-center'>1</h1>
-                <h3 className='text-[22px] m-4 w-[200px] text-center'>Enter your <br/>favourite movie</h3>
+                <h3 className='text-[22px] m-4 w-[200px] text-center'>Select your <br/>favourite movie</h3>
             </div>
             <div className='flex flex-col justify-center items-center mt-10'>
                 <h1 className='bg-[#E50914] text-[30px] w-[45px] rounded-full text-center'>2</h1>
