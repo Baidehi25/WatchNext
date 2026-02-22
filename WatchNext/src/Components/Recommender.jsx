@@ -13,7 +13,7 @@ const Recommender = forwardRef((props, ref) => {
     useEffect(() => {
         // Fetch the list of movies for autocomplete when the component mounts
         async function fetchmovies() {
-            const response = await fetch('http://localhost:8000/movies');
+            const response = await fetch('https://watchnext-backend-p94i.onrender.com/movies');
             const data = await response.json();
             setMovieList(data.movies);
         }
@@ -37,7 +37,7 @@ const Recommender = forwardRef((props, ref) => {
     const handleRecommend = async () => {
         setStatus('loading')
         try {
-            const response = await fetch('http://localhost:8000/recommend', {
+            const response = await fetch('https://watchnext-backend-p94i.onrender.com/recommend', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ movie: movieInput })
