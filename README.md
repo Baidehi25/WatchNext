@@ -28,8 +28,8 @@ https://watchnext-project.vercel.app/
 5. The UI dynamically renders the recommendation card with loading states and smooth transitions.
 
 ## Future Improvements
-~~1. Multiple recommendation cards~~
-2. “Match Score” based on user patterns
+~~1. Multiple recommendation cards~~ 
+2. “Match Score” based on user patterns 
 3. Save to watchlist feature (localStorage)
 
 ## License
