@@ -5,6 +5,9 @@
 WatchNext is a machine learning powered movie recommendation system that uses association rule mining to identify relationships between films based on user viewing behaviour.
 Unlike traditional recommendation systems that rely heavily on ratings or popularity metrics, WatchNext focuses on discovering hidden co-watching patterns. This approach helps generate recommendations that better reflect how audiences actually consume content.
 
+## 🔗 Live Demo  
+https://watchnext-project.vercel.app/
+
 ## Features
 - Recommendations based on co-watching patterns
 - API integration between ML and backend
@@ -14,6 +17,7 @@ Unlike traditional recommendation systems that rely heavily on ratings or popula
 - React + Vite
 - Tailwind CSS
 - Python (for ML)
+- Fast API 
 - OMDb API (Movie metadata)
 
 ## How it Works
@@ -24,8 +28,8 @@ Unlike traditional recommendation systems that rely heavily on ratings or popula
 5. The UI dynamically renders the recommendation card with loading states and smooth transitions.
 
 ## Future Improvements
-1. Multiple recommendation cards
-2. “Match Score” based on user patterns
+1. ~~Multiple recommendation cards~~ 
+2. “Match Score” based on user patterns 
 3. Save to watchlist feature (localStorage)
 
 ## License
