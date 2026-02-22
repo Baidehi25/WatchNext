@@ -1,6 +1,6 @@
 🚧 Work in Progress 
 
-## NOTE:
+### NOTE:
 - Please access via Desktop for now.
 - The backend has been deployed in Render (Free version). You might not see the suggestions dropdown immediately, kindly wait for a minute or so for the backend to startup.
 
