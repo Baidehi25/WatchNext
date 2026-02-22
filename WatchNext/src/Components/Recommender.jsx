@@ -67,12 +67,12 @@ const Recommender = forwardRef((props, ref) => {
     return (
         <div ref={ref}>
             <section>
-                <div className='flex flex-col justify-center items-center m-30'>
+                <div className='flex flex-col justify-center items-center px-6 py-20'>
                     <h2 className='text-white text-[40px] font-bold mt-10 text-center'>Find Your Next Binge</h2>
-                    <div className='mt-8. text-white text-center w-[500px]  p-16 flex flex-col justify-center items-center gap-10'>
+                    <div className='mt-8. text-white text-center w-full max-w-[500px]  p-16 flex flex-col justify-center items-center gap-10'>
                         <div className='relative flex flex-col gap-4 text-[22px] justify-center items-center'>
 
-                            <input type="text" value={movieInput} onChange={(e) => setMovieInput(e.target.value)} placeholder='Enter a movie...' className='w-[400px] bg-transparent border-b-2 text-center border-white/50 focus:outline-none focus:border-white' />
+                            <input type="text" value={movieInput} onChange={(e) => setMovieInput(e.target.value)} placeholder='Enter a movie...' className='w-full bg-transparent border-b-2 text-center border-white/50 focus:outline-none focus:border-white' />
                             {suggestions.length > 0 && (
                                 <div className='absolute top-full bg-black/90 w-[500px] max-h-40 overflow-y-auto shadow-lg'>
                                     {suggestions.map((suggestion, index) => (
