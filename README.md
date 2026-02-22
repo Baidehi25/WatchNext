@@ -1,7 +1,11 @@
 🚧 Work in Progress 
 
-**PERFECTLY FUNCTIONAL FOR DESKTOP AS OF NOW**
+## NOTE:
+- Please access via Desktop for now.
+- The backend has been deployed in Render (Free version). You might not see the suggestions dropdown immediately, kindly wait for a minute or so for the backend to startup.
 
+  
+<br>
 
 # WatchNext
 WatchNext is a machine learning powered movie recommendation system that uses association rule mining to identify relationships between films based on user viewing behaviour.
