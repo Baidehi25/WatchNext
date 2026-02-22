@@ -11,13 +11,13 @@ const posters = [
 export default function BackgroundCarousel() {
   return (
     <div className="absolute inset-0 overflow-hidden z-0">
-      <div className="flex w-max whitespace-nowrap animate-carousel will-change-transform">
+      <div className="flex whitespace-nowrap animate-carousel will-change-transform">
         {[...posters, ...posters].map((src, index) => (
           <img
             key={`${src}-${index}`}
             src={src}
             alt="poster"
-            className="w-[200px] h-screen object-cover opacity-80 brightness-60"
+            className="w-[200px] h-screen object-cover opacity-80 brightness-60 flex-shrink-0"
           />
         ))}
       </div>
