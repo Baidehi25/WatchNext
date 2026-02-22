@@ -17,6 +17,7 @@ https://watchnext-project.vercel.app/
 - React + Vite
 - Tailwind CSS
 - Python (for ML)
+- Fast API 
 - OMDb API (Movie metadata)
 
 ## How it Works
@@ -27,7 +28,7 @@ https://watchnext-project.vercel.app/
 5. The UI dynamically renders the recommendation card with loading states and smooth transitions.
 
 ## Future Improvements
-1. Multiple recommendation cards
+~~1. Multiple recommendation cards~~
 2. “Match Score” based on user patterns
 3. Save to watchlist feature (localStorage)
 
