@@ -1,4 +1,6 @@
-🚧 Work in Progress
+🚧 Work in Progress 
+
+**PERFECTLY FUNCTIONAL FOR DESKTOP AS OF NOW**
 
 
 # WatchNext
