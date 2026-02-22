@@ -21,7 +21,7 @@ from recommender import get_recommendations,resultsdb
 app=FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['https://watchnext-project.vercel.app/'],  # React's origin
+    allow_origins=['https://watchnext-project.vercel.app'],  # React's origin
     allow_credentials=True,
     allow_methods=['*'],        # Allow all HTTP methods (GET, POST, etc.)
     allow_headers=['*']         # Allow all headers 

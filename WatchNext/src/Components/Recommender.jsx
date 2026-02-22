@@ -46,7 +46,7 @@ const Recommender = forwardRef((props, ref) => {
 
             const movieDetails = await Promise.all(
                 data.recommendations.map(async (title) => {
-                    const omdbResponse = await fetch(`http://www.omdbapi.com/?t=${encodeURIComponent(title)}&apikey=${import.meta.env.VITE_OMDB_API_KEY}`);
+                    const omdbResponse = await fetch(`https://www.omdbapi.com/?t=${encodeURIComponent(title)}&apikey=${import.meta.env.VITE_OMDB_API_KEY}`);
                     return await omdbResponse.json();
                 })
             );
