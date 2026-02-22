@@ -19,7 +19,7 @@ export default function BackgroundCarousel() {
             key={`${src}-${index}`}
             src={src}
             alt="poster"
-            className="w-[200] h-[100vh] object-cover opacity-80 brightness-60"
+            className="w-[500] h-[100vh] object-cover opacity-80 brightness-60"
           />
         ))}
 
